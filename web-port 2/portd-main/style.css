@@ -32,17 +32,34 @@ body {
 
  .nav-top .logo  a {
   font-size: 2rem;
+  position: relative;
   background: none;
   text-decoration: none;
   color: black;
   transition: .3s;
   font-family: 'Archivo Black', sans-serif;
  }
- .nav-top .logo  a:hover {
-  background-color: transparent;
-  box-shadow: 2px 5px 20px rgba(18, 160, 255, 0.2);
-}
- 
+
+ /* .logo a {
+  animation: animate 5s linear infinite ;
+ }
+
+@keyframes animate {
+  0% , 18% , 20% , 50.1% , 60% , 65.1% , 80% , 90.1% , 92% {
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+  }
+  18.1% , 20.1% , 30% ,50%, 60.1%,  65%,80.1% , 90.1%, 92.1% ,100% {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px  #f09819,
+    0 0 20px  #f09819,
+    0 0 40px  #f09819,
+    0 0 80px  #f09819,
+    0 0 100PX  #f09819,
+    0 0 300PX  #f09819;
+  }
+} */
+
 
 
 
