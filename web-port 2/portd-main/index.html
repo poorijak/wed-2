@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
         <nav>
@@ -36,10 +37,10 @@
                     <!--end  top -->
                     <div class="nav-bottom">
                         <ul class="menu">
-                            <li class="Port"><a href="">Portfolio (Full)</a></li>
-                            <li class="act"><a href="">Activity</a></li>
-                            <li class=Art><a href="">Art work</a></li>
-                            <li class="Work"><a href="">Work</a></li>
+                            <li class="Port"><a href="#banner">Portfolio (Full)</a></li>
+                            <li class="act"><a href="#Activity">Activity</a></li>
+                            <li class=Art><a href="#Poster">Poster-design</a></li>
+                            <li class="Work"><a href="#work">Work</a></li>
                             <li class="About"><a href="">About Us</a></li>
                         </ul>
                     </div>
@@ -74,10 +75,13 @@
             <div class="container">
                 <div class="banner-title">
                     <i><h1>PORTFOLIO</h1></i>
-                    <a href="#"  class="banner-btn">View More</a>
+                    <a href="all-html/portfolio/portfolio.html"  class="banner-btn">View More</a>
                 </div>
             </div>
         </section>
+
+
+        <!-- banner -->
 
         <section id="Poster">
             
@@ -86,7 +90,7 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, quia.</p>
             </div>
                 <div class="Poster-flex">
-                    <div class="Poster-items">
+                    <div id class="Poster-items">
                             <div class="Poster-img">
                                 <img src="img/274098032_2084824961692100_3001175275231838971_n.jpg" alt="">
                             </div>
@@ -98,7 +102,7 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="Poster-items">
+                    <div   class="Poster-items">
                             <div class="Poster-img">
                                 <img src="img/emo.jpg" alt="">
                             </div>
@@ -110,7 +114,7 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="Poster-items">
+                    <div  class="Poster-items">
                             <div class="Poster-img">
                                 <img src="img/โปส-rovแก้-1-.jpg" alt="">
                             </div>
@@ -370,6 +374,30 @@
 
 
         <!-- end work -->
+
+        <script>
+            ScrollReveal({ 
+                reset: true ,
+                distance: '100px',
+                duration: 2000,
+                delay: 400
+            });
+
+            ScrollReveal().reveal('.profile', { delay: 50,  });
+            ScrollReveal().reveal('#banner', { delay: 50,  });
+            ScrollReveal().reveal('.Poster-title', { delay: 20, origin: 'left'});
+            ScrollReveal().reveal('.Poster-flex', { delay: 100, });
+            ScrollReveal().reveal('.activity-title', { delay: 20, });
+            ScrollReveal().reveal('.activity-grid', { delay: 100, });
+            ScrollReveal().reveal('#work', { delay: 100, });
+            ScrollReveal().reveal('.work-title', { delay: 20,origin: 'bottom' });
+            ScrollReveal().reveal('.work-left-grid-items', { delay: 20, origin: 'left' });
+            ScrollReveal().reveal('.work-right-grid-items', { delay: 20, origin: 'right' });
+
+            
+            
+
+        </script>
 
        
 

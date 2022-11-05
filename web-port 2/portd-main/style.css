@@ -13,8 +13,14 @@
   max-width: 960px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   background-color: rgb(255, 255, 255);
+  
 }
 
 .nav-top {
@@ -102,7 +108,7 @@ body {
 }
 
 #banner {
-  height: 100vh;
+  height: 110vh;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -425,6 +431,7 @@ body {
 }
 .work-left-grid-items:nth-child(1):hover::before {
   filter: none;
+  
   border-radius: 10px;
 }
 .work-left-grid-items:nth-child(2),
@@ -652,7 +659,7 @@ body {
   transform: translateY(-10px);
   transition: 0.4s;
 }
-.work-right-grid-items:nth-child(4):hover::before {
+.work-right-grid-items:nth-child(4.):hover::before {
   filter: none;
   border-radius: 10px;
 }
@@ -689,8 +696,10 @@ body {
 
 /* end work */
 
+
+
 #Poster {
-  height: 800px;
+  height: 100vh;
   width: 100%;
   margin: 0 0;
 }
@@ -714,7 +723,7 @@ body {
 
 .Poster-items {
   width: 100%;
-  height: 610px;
+  height: 654px;
   margin: 0.5rem;
   transition: 0.3s;
   border-radius: 10px;
@@ -727,9 +736,10 @@ body {
 }
 
 
+
 .Poster-items img {
   width: 100%;
-  height: 400px;
+  height: 444px;
   border-radius: 10px;
 }
 
@@ -825,3 +835,193 @@ body {
   grid-template-rows: repeat(4, 29px);
   padding-top: 1rem;
 }
+
+/* end footer */
+
+.port-title {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: rgb(34, 34, 34);
+}
+.port-title  h1{
+  padding: 20px;
+  font-size: 4rem;
+  color: #fff;
+  font-family: "Archivo Black", sans-serif;
+}
+.port-title  p{
+ 
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 10px;
+}
+
+
+#portfolio {
+background-color: rgb(34, 34, 34);
+height: 363vh;
+}
+
+
+
+.port-container {
+  display: flex;
+  justify-content: center
+}
+
+
+.port-flex {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(4 , 400px);
+  grid-template-rows: repeat(10 , 300px);
+  grid-gap: 3rem;
+}
+
+.port-flex-items:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+.port-flex-items:nth-child(2) {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+.port-flex-items:nth-child(3) {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+.port-flex-items:nth-child(4) {
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+}
+
+.port-flex-items:nth-child(5) {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+}
+
+.port-flex-items:nth-child(6) {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+}
+.port-flex-items:nth-child(7) {
+  grid-column: 3/ 4;
+  grid-row: 3 / 5;
+}
+.port-flex-items:nth-child(8) {
+  grid-column: 4 / 5;
+  grid-row: 3 / 5;
+}
+.port-flex-items:nth-child(9) {
+  grid-column: 1 / 2;
+  grid-row: 5 / 7;
+}
+.port-flex-items:nth-child(10) {
+  grid-column: 2 / 3;
+  grid-row: 5 / 7;
+}
+.port-flex-items:nth-child(11) {
+  grid-column:  3 / 4;
+  grid-row: 5 / 7;
+}
+.port-flex-items:nth-child(12) {
+  grid-column: 4 / 5;
+  grid-row: 5 / 7;
+}
+.port-flex-items:nth-child(13) {
+  grid-column: 1 / 2;
+  grid-row: 7 / 9;
+}
+.port-flex-items:nth-child(14) {
+  grid-column: 2 / 3;
+  grid-row: 7 / 9;
+}
+.port-flex-items:nth-child(15) {
+  grid-column: 3 / 4;
+  grid-row: 7 / 9;
+}
+.port-flex-items:nth-child(16) {
+  grid-column: 4 / 5;
+  grid-row: 7 / 9;
+}
+
+
+.port-flex-items-img:hover::after
+ {
+  filter: none;
+}
+.port-flex-items-img::before,
+.port-flex-items-img::after {
+  content: '';
+  position: absolute;
+  left: -2px ;
+  top: -2px ;
+  transition: .3s;
+  background-image: linear-gradient(
+
+  -45deg,
+  #00ff66,
+  #00ffff,
+  #ff00ff,
+  #ff0099,
+  #099fff
+  ) ;
+
+  background-size: 400%;
+  height: calc(100% + 157px);
+  width: calc(100% - -5px);
+  z-index: -1;
+  border-radius: 10px;
+  animation: change 40s linear infinite;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.port-flex-items-img::after {
+  filter: blur(15px);
+}
+
+.port-flex-items-img:hover {
+  transform: translateY(-10px)
+  scale(1.1);
+}
+
+.port-flex-items {
+  padding: 1rem;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: c
+  border-radius: 10px;
+  justify-content:  end;
+
+}
+
+
+.port-flex-items-img {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: .3s;
+ 
+}
+
+.port-flex-items-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
